@@ -1,0 +1,198 @@
+!!! 5
+%html{:lang => "en"}
+%head
+  %meta{:charset => "UTF-8"}/
+  %link{:rel => "stylesheet", :href => "../assets/css/main.css"}/
+  %title Document
+%body
+  .navbar.navbar-inverse
+    .navbar-inner
+      .container
+        .row
+          .span2
+            %a.brand{:href => "#"}
+              %img{:src => "../assets/images/logo.png", :alt => ""}
+          .language-switcher.pull-right
+            %ul
+              %li.active
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+              %li
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+              %li
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+          %form.navbar-search.pull-right{:action => ""}
+            %input{:type => "text", :class => "search-query", :placeholder => "Search"}
+          .nav-collapse.collapse.pull-right
+            %ul.nav
+              %li
+                %a{:href => "#"} Contact Us
+              %li
+                %a{:href => "#"} Documentation
+              %li
+                %a{:href => "#"} FAQ
+              %li
+                %a{:href => "#"} Login
+  .services-tabs-w
+    .container
+      .service-tabs-i
+        .service-tab-w
+          %a.service-tab{:href => "#"}
+            .row-fluid
+              .span3
+                %i.icon-search.service-icon
+              .span9
+                Find your
+                %br
+                %span domain
+        .service-tab-w
+          %a.service-tab{:href => "#"}
+            .row-fluid
+              .span3
+                %i.icon-globe.service-icon
+              .span9
+                Build your
+                %br
+                %span website
+        .service-tab-w.active.tab-hosting
+          %a.service-tab{:href => "#"}
+            .row-fluid
+              .span4
+                %i.icon-cloud.service-icon
+              .span8
+                Website
+                %br
+                %span hosting
+        .service-tab-w
+          %a.service-tab{:href => "#"}
+            .row-fluid
+              .span3
+                %i.icon-cogs.service-icon
+              .span9
+                Hosting
+                %br
+                %span garden
+  .page-content
+    .container
+      .service-domain-w
+        %h1 Some catchy phrase goes here
+        %form{:action => ""}
+          .domain-search-w
+            .row-fluid
+              .span9
+                .domain-search-input-w
+                  .row-fluid
+                    .span9
+                      %input.domain-search-input{:type => "text", :value => "Find your new domain name..."}
+                    .span3
+                      .domain-selector-w
+                        %select{:name => ""}
+                          %option{:value => "com"} .com
+              .span3
+                %button.btn.search-btn
+                  Search
+  .sub-page-content
+    .container
+      .row
+        .span4
+          .service-info-box
+            .service-info-icon
+              %i.icon-cloud
+            %h3
+              Website
+              %strong Hosting
+            .service-info-desc
+              %p Fusce in enim ante, vel facilisis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non risus non augue hendrerit porttitor. Aliquam platea lacus diam.
+              .service-info-cta
+                %a.btn.btn-large.btn-primary{:href => "#"}
+                  %i.icon-cloud-upload
+                  Learn More
+        .span4
+          .service-info-box.service-info-orange
+            .service-info-icon
+              %i.icon-globe
+            %h3
+              Build your
+              %strong Website
+            .service-info-desc
+              %p Phasellus sem justo, lacinia quis mattis nec, vestibulum id est. In hac habitasse platea dictumst. Mauris mi enim, porttitor in tempus porttitor, mollis id nibh platea vest ienimd est.
+              .service-info-cta
+                %a.btn.btn-large.btn-primary{:href => "#"}
+                  %i.icon-tasks
+                  Learn More
+        .span4
+          .service-info-box.service-info-blue
+            .service-info-icon
+              %i.icon-cogs
+            %h3
+              Zitana
+              %strong Garden
+            .service-info-desc
+              %p Nulla sed dui enim, mollis molestie dui. Cras lacus tellus, pellentesque in elementum et, venenatis vitae nulla. Aliquam erat volutpat. Vestibulum ante ipsum primis.
+              .service-info-cta
+                %a.btn.btn-large.btn-primary{:href => "#"}
+                  %i.icon-cog
+                  Learn More
+  .pre-footer
+    .container
+      .row
+        .span9
+          .menu-list
+            %h4.menu-header Web Hosting
+            %ul
+              %li
+                %a{:href => "#"} Order Hosting
+              %li
+                %a{:href => "#"} Compare Plan
+              %li
+                %a{:href => "#"} Register Domain
+          .menu-list
+            %h4.menu-header Company
+            %ul
+              %li
+                %a{:href => "#"} About Us
+              %li
+                %a{:href => "#"} Contact Us
+              %li
+                %a{:href => "#"} In the News
+          .menu-list
+            %h4.menu-header Support
+            %ul
+              %li
+                %a{:href => "#"} Documentation
+              %li
+                %a{:href => "#"} System Status
+              %li
+                %a{:href => "#"} Knowledge Base
+              %li
+                %a{:href => "#"} Account Login
+        .span3
+          .social-w
+            %h4.menu-header Social Networks
+            %ul.social-list
+              %li
+                %a{:href => "#"}
+                  %i.icon-linkedin-sign
+              %li
+                %a{:href => "#"}
+                  %i.icon-twitter-sign
+              %li
+                %a{:href => "#"}
+                  %i.icon-facebook-sign
+  %footer.deep-footer
+    .container
+      .row
+        .span4
+          .copyright &copy; 2013 Zitana.com All rights reserved.
+        .span8
+          %ul.deep-footer-menu.pull-right
+            %li
+              %a{:href => "#"} Privacy Policy
+            %li
+              %a{:href => "#"} Terms of Service
+            %li
+              %a{:href => "#"} About Us
+            %li
+              %a{:href => "#"} Contact Us
