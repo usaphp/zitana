@@ -1,0 +1,188 @@
+!!! 5
+%html{:lang => "en"}
+%head
+  %meta{:charset => "UTF-8"}/
+  %link{:rel => "stylesheet", :href => "../assets/css/main.css"}/
+  %title Document
+%body
+  .navbar.navbar-inverse
+    .navbar-inner
+      .container
+        .row
+          .span2
+            %a.brand{:href => "#"}
+              %img{:src => "../assets/images/logo.png", :alt => ""}
+          .language-switcher.pull-right
+            %ul
+              %li.active
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+              %li
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+              %li
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+          %form.navbar-search.pull-right{:action => ""}
+            %input{:type => "text", :class => "search-query", :placeholder => "Search"}
+          .nav-collapse.collapse.pull-right
+            %ul.nav
+              %li
+                %a{:href => "#"} Contact Us
+              %li
+                %a{:href => "#"} Documentation
+              %li
+                %a{:href => "#"} FAQ
+              %li
+                %a{:href => "#"} Login
+  .page-content
+    .container
+      .row
+        .span8
+          .search-box-w
+            %input.search-box-i{:type => "text", :placeholder => "Search documentation articles..."}
+            %i.icon-search
+          %h1.page-heading Documentation Topics
+          .row-fluid
+            .span6
+              %ul.categories-list.bordered
+                %li
+                  %h4
+                    %a{:href => "#"}
+                      %i.icon-lock.category-icon
+                      %span Server Security
+                %li
+                  %h4
+                    %a{:href => "#"}
+                      %i.icon-globe.category-icon
+                      %span Domain Setup
+                %li
+                  %h4
+                    %a{:href => "#"}
+                      %i.icon-tasks.category-icon
+                      %span Getting Started
+                %li
+                  %h4
+                    %a{:href => "#"}
+                      %i.icon-cogs.category-icon
+                      %span Site Settings
+                %li
+                  %h4
+                    %a{:href => "#"}
+                      %i.icon-envelope-alt.category-icon
+                      %span Mail Setup
+            .span6
+              %ul.categories-list
+                %li
+                  %h4
+                    %a{:href => "#"}
+                      %i.icon-bar-chart.category-icon
+                      %span Analytics
+                %li
+                  %h4
+                    %a{:href => "#"}
+                      %i.icon-inbox.category-icon
+                      %span Task Management
+                %li
+                  %h4
+                    %a{:href => "#"}
+                      %i.icon-print.category-icon
+                      %span Printer Setup
+                %li
+                  %h4
+                    %a{:href => "#"}
+                      %i.icon-picture.category-icon
+                      %span Image Upload
+                %li
+                  %h4
+                    %a{:href => "#"}
+                      %i.icon-hdd.category-icon
+                      %span Backup Settings
+        .span4
+          .side-articles-list-w
+            %h3
+              %i.icon-file-alt
+              Popular Articles
+            %ul
+              %li
+                %h5
+                  %a{:href => "#"} How to install Centos
+                %p Cras et neque facilisis augue suscipit elementum sed ut augue. Donec molestie eleifend ultrices. Pellentesque justo tortor, pellentesque ac consectetur vitae, imperdiet id velit.
+              %li
+                %h5
+                  %a{:href => "#"} Setting up MySQL database
+                %p Cras et neque facilisis augue suscipit elementum sed ut augue. Donec molestie eleifend ultrices. Pellentesque justo tortor, pellentesque ac consectetur vitae, imperdiet id velit.
+              %li
+                %h5
+                  %a{:href => "#"} Changing DNS settings
+                %p Cras et neque facilisis augue suscipit elementum sed ut augue. Donec molestie eleifend ultrices. Pellentesque justo tortor, pellentesque ac consectetur vitae, imperdiet id velit.
+              %li
+                %h5
+                  %a{:href => "#"} Email server setup
+                %p Cras et neque facilisis augue suscipit elementum sed ut augue. Donec molestie eleifend ultrices. Pellentesque justo tortor, pellentesque ac consectetur vitae, imperdiet id velit.
+              %li
+                %h5
+                  %a{:href => "#"} Getting started guide
+                %p Cras et neque facilisis augue suscipit elementum sed ut augue. Donec molestie eleifend ultrices. Pellentesque justo tortor, pellentesque ac consectetur vitae, imperdiet id velit.
+
+  .pre-footer
+    .container
+      .row
+        .span9
+          .menu-list
+            %h4.menu-header Web Hosting
+            %ul
+              %li
+                %a{:href => "#"} Order Hosting
+              %li
+                %a{:href => "#"} Compare Plan
+              %li
+                %a{:href => "#"} Register Domain
+          .menu-list
+            %h4.menu-header Company
+            %ul
+              %li
+                %a{:href => "#"} About Us
+              %li
+                %a{:href => "#"} Contact Us
+              %li
+                %a{:href => "#"} In the News
+          .menu-list
+            %h4.menu-header Support
+            %ul
+              %li
+                %a{:href => "#"} Documentation
+              %li
+                %a{:href => "#"} System Status
+              %li
+                %a{:href => "#"} Knowledge Base
+              %li
+                %a{:href => "#"} Account Login
+        .span3
+          .social-w
+            %h4.menu-header Social Networks
+            %ul.social-list
+              %li
+                %a{:href => "#"}
+                  %i.icon-linkedin-sign
+              %li
+                %a{:href => "#"}
+                  %i.icon-twitter-sign
+              %li
+                %a{:href => "#"}
+                  %i.icon-facebook-sign
+  %footer.deep-footer
+    .container
+      .row
+        .span4
+          .copyright &copy; 2013 Zitana.com All rights reserved.
+        .span8
+          %ul.deep-footer-menu.pull-right
+            %li
+              %a{:href => "#"} Privacy Policy
+            %li
+              %a{:href => "#"} Terms of Service
+            %li
+              %a{:href => "#"} About Us
+            %li
+              %a{:href => "#"} Contact Us
