@@ -28,21 +28,13 @@
           .nav-collapse.collapse.pull-right
             %ul.nav
               %li
-                %a{:href => "contact.html"}
-                  %i.icon-envelope-alt
-                  Contact Us
+                %a{:href => "contact.html"} Contact Us
               %li
-                %a{:href => "documentation-categories.html"}
-                  %i.icon-info-sign
-                  Documentation
+                %a{:href => "documentation-categories.html"} Documentation
               %li
-                %a{:href => "#"}
-                  %i.icon-question-sign
-                  FAQ
+                %a{:href => "#"} FAQ
               %li
-                %a{:href => "#"}
-                  %i.icon-user
-                  Login
+                %a{:href => "#"} Login
   .services-tabs-w
     .container
       .service-tabs-i
@@ -64,7 +56,7 @@
                 Build your
                 %br
                 %span website
-        .service-tab-w.active.tab-hosting
+        .service-tab-w.tab-hosting
           %a.service-tab{:href => "#"}
             .row-fluid
               .span4
@@ -82,67 +74,72 @@
                 Hosting
                 %br
                 %span garden
-  .page-content.with-tab-menu
+  #page-search-results.page-content.with-tab-menu
     .container
-      .service-domain-w
-        %h1 Some catchy phrase goes here
-        %form{:action => ""}
-          .domain-search-w
-            .row-fluid
-              .span9
-                .domain-search-input-w
-                  .row-fluid
-                    .span9
-                      %input.domain-search-input{:type => "text", :value => "Find your new domain name..."}
-                    .span3
-                      .domain-selector-w
-                        %select{:name => ""}
-                          %option{:value => "com"} .com
-              .span3
-                %button.btn.search-btn
-                  Search
-  .sub-page-content
-    .container
-      .row
-        .span4
-          .service-info-box
-            .service-info-icon
-              %i.icon-cloud
-            %h3
-              Website
-              %strong Hosting
-            .service-info-desc
-              %p Fusce in enim ante, vel facilisis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non risus non augue hendrerit porttitor. Aliquam platea lacus diam.
-              .service-info-cta
-                %a.btn.btn-large.btn-primary{:href => "#"}
-                  %i.icon-cloud-upload
-                  Learn More
-        .span4
-          .service-info-box.service-info-orange
-            .service-info-icon
-              %i.icon-globe
-            %h3
-              Build your
-              %strong Website
-            .service-info-desc
-              %p Phasellus sem justo, lacinia quis mattis nec, vestibulum id est. In hac habitasse platea dictumst. Mauris mi enim, porttitor in tempus porttitor, mollis id nibh platea vest ienimd est.
-              .service-info-cta
-                %a.btn.btn-large.btn-primary{:href => "#"}
-                  %i.icon-tasks
-                  Learn More
-        .span4
-          .service-info-box.service-info-blue
-            .service-info-icon
-              %i.icon-cogs
-            %h3
-              Zitana
-              %strong Garden
-            .service-info-desc
-              %p Nulla sed dui enim, mollis molestie dui. Cras lacus tellus, pellentesque in elementum et, venenatis vitae nulla. Aliquam erat volutpat. Vestibulum ante ipsum primis.
-              .service-info-cta
-                %a.btn.btn-large.btn-primary{:href => "#"}
-                  %i.icon-cog
-                  Learn More
+      .white-paper
+        .wp-header
+          .search-box-w
+            %input.search-box-i{:type => "text", :placeholder => "Search documentation articles..."}
+            %i.icon-search
+          %h1 Search Results:
+        .wp-content
+          .search-results-w
+            .search-result
+              %h3
+                %a{:href => "documentation-entry-side.html"} How to install CentOS
+              %p
+                \...molestie scelerisque turpis aliquam porta. In
+                %strong.query-match rutrum
+                eros et leo vestibulum facilisis. Donec volutpat metus ut ligula mattis facilisis. Aenean sem enim,
+                %strong.query-match ornare et tempor
+                tincidunt, rhoncus ac tortor. Etiam varius, elit a molestie sodales, ipsum quam condimentum odio, sed ultrices augue nibh vitae diam....
+            .search-result
+              %h3
+                %a{:href => "documentation-entry-side.html"} Settings up a mySQL database
+              %p
+                \...consequat. Integer ut elit vel neque
+                %strong.query-match pulvinar
+                mattis nec ac elit. Cras malesuada posuere lacinia. Donec non turpis a
+                %strong.query-match eros
+                scelerisque hendrerit. Duis molestie scelerisque turpis aliquam porta. In rutrum eros et leo vestibulum facilisis. Donec
+                %strong.query-match volutpat
+                metus ut ligula mattis facilisis. Aenean sem enim, ornare et tempor tincidunt, rhoncus ac
+                %strong.query-match tortor.
+                Etiam varius, elit a molestie sodales, ipsum quam condimentum odio, sed ultrices augue nibh vitae diam.
+            .search-result
+              %h3
+                %a{:href => "documentation-entry-side.html"} How to install CentOS
+              %p
+                \...molestie scelerisque turpis aliquam porta. In rutrum eros et leo
+                %strong.query-match vestibulum
+                facilisis. Donec volutpat metus ut ligula mattis facilisis. Aenean
+                %strong.query-match sem enim
+                , ornare et tempor tincidunt, rhoncus ac tortor. Etiam varius, elit a molestie sodales, ipsum quam condimentum odio, sed ultrices augue nibh vitae diam....
+            .search-result
+              %h3
+                %a{:href => "documentation-entry-side.html"} Changing DNS settings
+              %p
+                \... consequat. Integer ut elit vel neque pulvinar mattis
+                %strong.query-match nec
+                ac elit. Cras malesuada posuere lacinia. Donec non turpis a eros
+                %strong.query-match scelerisque
+                hendrerit. Duis molestie scelerisque turpis aliquam porta. In rutrum eros et leo vestibulum facilisis. Donec volutpat metus ut ligula mattis facilisis. Aenean sem enim, ornare et tempor tincidunt, rhoncus ac tortor. Etiam varius, elit a molestie sodales, ipsum quam condimentum odio, sed ultrices augue nibh vitae diam.
+          .pagination
+            %ul
+              %li
+                %a{:href => "#"} Prev
+              %li
+                %a{:href => "#"} 1
+              %li
+                %a{:href => "#"} 2
+              %li
+                %a{:href => "#"} 3
+              %li
+                %a{:href => "#"} 4
+              %li
+                %a{:href => "#"} 5
+              %li
+                %a{:href => "#"} Next
   .pre-footer
     .container
       .row
