@@ -73,8 +73,8 @@
                 Website
                 %br
                 %span hosting
-        .service-tab-w
-          %a.service-tab{:href => "hosting.html"}
+        .service-tab-w.active
+          %a.service-tab{:href => "garden.html"}
             .row-fluid
               .span3
                 %i.icon-cogs.service-icon
@@ -82,56 +82,8 @@
                 Hosting
                 %br
                 %span garden
-  #page-contact.page-content.with-tab-menu
+  #page-garden.page-content.with-tab-menu
     .container
-      .row
-        .span7
-          .white-paper
-            .wp-header
-              %h1 Contact Us
-            .wp-content
-              %form{:action => "#"}
-                .row-fluid
-                  .span6
-                    %label{:for => ""} First Name
-                    %input.input-block-level{:type => "text", :placeholder => "Your first name"}
-                  .span6
-                    %label{:for => ""} Last Name
-                    %input.input-block-level{:type => "text", :placeholder => "Your last name"}
-                .row-fluid
-                  .span12
-                    %label{:for => ""} Your Message
-                    %textarea.input-block-level{:name => "", :rows => "4", :placeholder => "Your message"}
-                %button.btn.btn-primary Send Message
-        .span5
-          .side-menu-w
-            .side-menu-i
-              %h3.bordered Contact Information
-              %ul.address-list
-                %li
-                  %i.icon-map-marker
-                  %strong Address:
-                  4 Penn Plaza, New York, NY
-                %li
-                  %i.icon-phone
-                  %strong Phone:
-                  (902) 133-2343
-                %li
-                  %i.icon-print
-                  %strong Fax:
-                  (812) 123-4432
-                %li
-                  %i.icon-envelope
-                  %strong Email:
-                  %a{:href => "#"} contact@zitana.com
-                %li
-                  %i.icon-facebook
-                  %strong Facebook:
-                  %a{:href => "#"} facebook.com/zitana
-                %li
-                  %i.icon-twitter
-                  %strong Twitter:
-                  %a{:href => "#"} twitter.com/zitana
   .pre-footer
     .container
       .row
