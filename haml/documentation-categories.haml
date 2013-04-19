@@ -23,7 +23,7 @@
               %li
                 %a{:href => "#"}
                   %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
-          %form.navbar-search.pull-right{:action => ""}
+          %form.navbar-search.pull-right{:action => "search-results.html"}
             %input{:type => "text", :class => "search-query", :placeholder => "Search"}
           .nav-collapse.collapse.pull-right
             %ul.nav
@@ -48,8 +48,9 @@
       .row
         .span8
           .search-box-w
-            %input.search-box-i{:type => "text", :placeholder => "Search documentation articles..."}
-            %i.icon-search
+            %form{:action => "search-results.html"}
+              %input.search-box-i{:type => "text", :placeholder => "Search documentation articles..."}
+              %i.icon-search
           %h1.page-heading Documentation Topics
           .row-fluid
             .span6

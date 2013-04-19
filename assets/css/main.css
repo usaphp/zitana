@@ -9099,6 +9099,9 @@ ul.categories-list li h4 {
   height: 70px;
   font-weight: 300;
 }
+.search-box-w form {
+  margin-bottom: 0px;
+}
 .search-box-w i {
   position: absolute;
   right: 40px;
