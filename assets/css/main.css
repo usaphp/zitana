@@ -3026,17 +3026,17 @@ input[type="button"].btn-block {
 .btn-warning {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #fbb450;
-  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
-  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
-  background-image: -o-linear-gradient(top, #fbb450, #f89406);
-  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-color: #f4c476;
+  background-image: -moz-linear-gradient(top, #f4c476, #eea52f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4c476), to(#eea52f));
+  background-image: -webkit-linear-gradient(top, #f4c476, #eea52f);
+  background-image: -o-linear-gradient(top, #f4c476, #eea52f);
+  background-image: linear-gradient(to bottom, #f4c476, #eea52f);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
-  border-color: #f89406 #f89406 #ad6704;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff4c476', endColorstr='#ffeea52f', GradientType=0);
+  border-color: #eea52f #eea52f #c17d10;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #f89406;
+  *background-color: #eea52f;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -3048,12 +3048,12 @@ input[type="button"].btn-block {
 .btn-warning.disabled,
 .btn-warning[disabled] {
   color: #ffffff;
-  background-color: #f89406;
-  *background-color: #df8505;
+  background-color: #eea52f;
+  *background-color: #ec9b17;
 }
 .btn-warning:active,
 .btn-warning.active {
-  background-color: #c67605 \9;
+  background-color: #d88c12 \9;
 }
 .btn-warning:hover,
 .btn-warning:focus,
@@ -3062,12 +3062,12 @@ input[type="button"].btn-block {
 .btn-warning.disabled,
 .btn-warning[disabled] {
   color: #ffffff;
-  background-color: #f89406;
-  *background-color: #df8505;
+  background-color: #eea52f;
+  *background-color: #ec9b17;
 }
 .btn-warning:active,
 .btn-warning.active {
-  background-color: #c67605 \9;
+  background-color: #d88c12 \9;
 }
 .btn-danger {
   color: #ffffff;
@@ -3444,7 +3444,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #427fb3;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
-  background-color: #f89406;
+  background-color: #eea52f;
 }
 .btn-group.open .btn-danger.dropdown-toggle {
   background-color: #bd362f;
@@ -8485,6 +8485,7 @@ ul.icons li [class*=" icon-"] {
 .icon-folder-open-alt:before {
   content: "\f115";
 }
+/* CUSTOM MIXINS */
 .language-switcher {
   overflow: hidden;
   width: 32px;
@@ -8787,6 +8788,198 @@ h1.page-heading {
   color: #fff;
   text-shadow: -1px -1px 1px #a52525;
   padding: 3px 5px;
+}
+/****************************/
+/* SHOPPING CART */
+/****************************/
+#page-cart .coupon-w {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0px 2px 8px 1px #eee, inset 0px 2px 2px 0px #fff;
+  -moz-box-shadow: 0px 2px 8px 1px #eee, inset 0px 2px 2px 0px #fff;
+  box-shadow: 0px 2px 8px 1px #eee, inset 0px 2px 2px 0px #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#page-cart .coupon-w form {
+  margin-bottom: 0px;
+}
+#page-cart .coupon-w label {
+  margin-right: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+#page-cart .coupon-w label i {
+  font-size: 16px;
+  line-height: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#page-cart .coupon-w input {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+#page-cart .cart-total {
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #888;
+  text-align: right;
+}
+#page-cart .cart-total strong {
+  vertical-align: middle;
+  font-size: 36px;
+  line-height: 40px;
+  margin-left: 5px;
+  font-weight: 900;
+  color: #5f7f3d;
+}
+#page-cart .cart-checkout-button {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#page-cart .cart-checkout-button i {
+  margin-left: 10px;
+}
+.secured-connection {
+  background-color: #fffbec;
+  color: #a0946c;
+  padding: 10px 20px;
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.secured-connection i {
+  vertical-align: middle;
+  color: #f9cf4f;
+  font-size: 32px;
+  margin-right: 10px;
+}
+.steps-w {
+  margin-bottom: 50px;
+}
+.steps-w .step {
+  display: block;
+  *zoom: 1;
+}
+.steps-w .step:before,
+.steps-w .step:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.steps-w .step:after {
+  clear: both;
+}
+.steps-w .step:before,
+.steps-w .step:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.steps-w .step:after {
+  clear: both;
+}
+.steps-w .step .step-number {
+  font-weight: 900;
+  background-color: #eacbcb;
+  color: #fff;
+  padding: 5px;
+  width: 25px;
+  text-align: center;
+  float: left;
+}
+.steps-w .step .step-caption {
+  background-color: #f1efe6;
+  color: #aeaba2;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  float: left;
+}
+.steps-w .step.current .step-number {
+  background-color: #da4141;
+  color: #fff;
+}
+.steps-w .step.current .step-caption {
+  background-color: #fff;
+  color: #31302b;
+}
+.steps-w .step.complete .step-number {
+  background-color: #a4cb58;
+  color: #fff;
+}
+.steps-w .step.complete .step-caption {
+  background-color: #fff;
+  color: #31302b;
+}
+#table-cart {
+  border-bottom: 1px solid #dddddd;
+}
+#table-cart .cell-right {
+  text-align: right;
+}
+#table-cart .cell-center {
+  text-align: center;
+}
+#table-cart thead th {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #777;
+}
+#table-cart tbody td {
+  padding: 20px 10px;
+}
+#table-cart .item-name {
+  margin: 0px;
+  margin-bottom: 5px;
+}
+#table-cart .item-name a.remove {
+  font-size: 12px;
+  margin-left: 10px;
+  font-weight: 400;
+}
+#table-cart ul.item-details {
+  list-style-type: square;
+}
+#table-cart ul.item-details strong {
+  color: #9f3939;
+}
+#table-cart .item-price-unit {
+  line-height: 30px;
+  font-size: 12px;
+}
+#table-cart .item-price-unit strong {
+  font-weight: 700;
+  font-size: 18px;
+}
+#table-cart .item-price-total {
+  line-height: 30px;
+  font-size: 12px;
+}
+#table-cart .item-price-total strong {
+  color: #9f3939;
+  font-size: 18px;
+  font-weight: 900;
+}
+#table-cart select.item-term {
+  font-size: 14px;
+}
+.continue-shopping-link {
+  font-size: 14px;
+}
+.continue-shopping-link i {
+  margin-right: 10px;
 }
 /****************************/
 /* DOCUMENTATION CATEGORIES */

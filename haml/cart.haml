@@ -1,0 +1,221 @@
+!!! 5
+%html{:lang => "en"}
+%head
+  %meta{:charset => "UTF-8"}/
+  %link{:rel => "stylesheet", :href => "../assets/css/main.css"}/
+  %title Document
+%body
+  .navbar.navbar-inverse
+    .navbar-inner
+      .container
+        .row
+          .span2
+            %a.brand{:href => "#"}
+              %img{:src => "../assets/images/logo.png", :alt => ""}
+          .language-switcher.pull-right
+            %ul
+              %li.active
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+              %li
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+              %li
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+          %form.navbar-search.pull-right{:action => ""}
+            %input{:type => "text", :class => "search-query", :placeholder => "Search"}
+          .nav-collapse.collapse.pull-right
+            %ul.nav
+              %li
+                %a{:href => "#"} Contact Us
+              %li
+                %a{:href => "#"} Documentation
+              %li
+                %a{:href => "#"} FAQ
+              %li
+                %a{:href => "#"} Login
+  #page-cart.page-content
+    .container
+      .steps-w
+        .row
+          .span3
+            %a.step.complete{:href => "#"}
+              %span.step-number
+                %i.icon-ok
+              %span.step-caption Order Review
+          .span3
+            .step.current{:href => "#"}
+              %span.step-number 2
+              %span.step-caption Billing Info
+          .span3
+            .step{:href => "#"}
+              %span.step-number 3
+              %span.step-caption Confirm Order
+          .span3
+            .step{:href => "#"}
+              %span.step-number 4
+              %span.step-caption Order Complete
+      .white-paper
+        .wp-header
+          .secured-connection.pull-right
+            %i.icon-lock
+            100% Secured Connection
+          %h1 Review your current order
+        .wp-content
+          %table#table-cart.table
+            %thead
+              %tr
+                %th{"width" => "40%"} Item
+                %th.cell-center{"width" => "20%"} Term
+                %th.cell-right{"width" => "20%"} Price per unit
+                %th.cell-right{"width" => "20%"} Total Price
+            %tbody
+              %tr
+                %td
+                  %h4.item-name
+                    Website Hosting
+                    %a.remove{:href => "#"} [remove]
+                  %ul.item-details
+                    %li
+                      plan:
+                      %strong pro
+                    %li
+                      domain:
+                      %strong zitana.com
+                %td.cell-center
+                  %select.item-term.input-small{:name => ""}
+                    %option{:value => "5 Years"} 5 Years
+                %td.cell-right
+                  .item-price-unit
+                    %strong $23.15
+                    \/mo
+                %td.cell-right
+                  .item-price-total
+                    %strong $53.40
+                    \/mo
+              %tr
+                %td
+                  %h4.item-name
+                    Website Hosting
+                    %a.remove{:href => "#"} [remove]
+                  %ul.item-details
+                    %li
+                      %strong .com
+                      domain registration
+                %td.cell-center
+                  %select.item-term.input-small{:name => ""}
+                    %option{:value => "5 Years"} 5 Years
+                %td.cell-right
+                  .item-price-unit
+                    %strong $23.15
+                    \/year
+                %td.cell-right
+                  .item-price-total
+                    %strong $53.40
+                    \/year
+              %tr
+                %td
+                  %h4.item-name
+                    Website Hosting
+                    %a.remove{:href => "#"} [remove]
+                  %ul.item-details
+                    %li
+                      plan:
+                      %strong pro
+                    %li
+                      domain:
+                      %strong zitana.com
+                %td.cell-center
+                  %select.item-term.input-small{:name => ""}
+                    %option{:value => "5 Years"} 5 Years
+                %td.cell-right
+                  .item-price-unit
+                    %strong $23.15
+                    \/mo
+                %td.cell-right
+                  .item-price-total
+                    %strong $53.40
+                    \/mo
+          .row-fluid
+            .span6
+              .coupon-w
+                %form.form-inline{:action => ""}
+                  %label{:for => ""}
+                    %i.icon-tags
+                    Coupon:
+                  %input.input-small{:type => "text", :placeholder => "Code"}
+              .continue-shopping-link-w
+                %a.continue-shopping-link{:href => "#"}
+                  %i.icon-angle-left
+                  Continue Shopping
+            .span6
+              .pull-right
+                .cart-total
+                  Total:
+                  %strong $82.15
+                %a.btn.btn-large.btn-warning.cart-checkout-button{:href => "#"}
+                  Checkout
+                  %i.icon-circle-arrow-right
+
+  .pre-footer
+    .container
+      .row
+        .span9
+          .menu-list
+            %h4.menu-header Web Hosting
+            %ul
+              %li
+                %a{:href => "#"} Order Hosting
+              %li
+                %a{:href => "#"} Compare Plan
+              %li
+                %a{:href => "#"} Register Domain
+          .menu-list
+            %h4.menu-header Company
+            %ul
+              %li
+                %a{:href => "#"} About Us
+              %li
+                %a{:href => "#"} Contact Us
+              %li
+                %a{:href => "#"} In the News
+          .menu-list
+            %h4.menu-header Support
+            %ul
+              %li
+                %a{:href => "#"} Documentation
+              %li
+                %a{:href => "#"} System Status
+              %li
+                %a{:href => "#"} Knowledge Base
+              %li
+                %a{:href => "#"} Account Login
+        .span3
+          .social-w
+            %h4.menu-header Social Networks
+            %ul.social-list
+              %li
+                %a{:href => "#"}
+                  %i.icon-linkedin-sign
+              %li
+                %a{:href => "#"}
+                  %i.icon-twitter-sign
+              %li
+                %a{:href => "#"}
+                  %i.icon-facebook-sign
+  %footer.deep-footer
+    .container
+      .row
+        .span4
+          .copyright &copy; 2013 Zitana.com All rights reserved.
+        .span8
+          %ul.deep-footer-menu.pull-right
+            %li
+              %a{:href => "#"} Privacy Policy
+            %li
+              %a{:href => "#"} Terms of Service
+            %li
+              %a{:href => "#"} About Us
+            %li
+              %a{:href => "#"} Contact Us
