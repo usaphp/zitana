@@ -3,6 +3,9 @@
 <head>
   <meta charset='UTF-8'>
   <link href='../assets/css/main.css' rel='stylesheet'>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
+  <script src='../assets/js/jquery-ui-1.10.2.custom.min.js' type='text/javascript'></script>
+  <script src='../assets/js/main.js' type='text/javascript'></script>
   <title>Document</title>
 </head>
 <body>
@@ -132,7 +135,214 @@
     </div>
   </div>
   <div class='page-content with-tab-menu' id='page-hosting'>
-    <div class='container'></div>
+    <div class='container'>
+      <!-- %h1.page-heading.text-center Hosting Pricing Plans -->
+      <div class='hosting-plans-w'>
+        <div class='row-fluid'>
+          <div class='span4'>
+            <div class='hosting-plan-w'>
+              <div class='hosting-plan plan-easy'>
+                <h3 class='plan-name'>Easy</h3>
+                <img src='../assets/images/plan-shadow-top-tp.png'>
+                <div class='plan-details'>
+                  <div class='row-fluid'>
+                    <div class='span5'>
+                      <div class='plan-price-w'>
+                        <div class='plan-price'>$<span>3</span>.99</div>
+                        <div class='plan-price-desc'>
+                          <span>per month</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='span7'>
+                      <ul class='plan-overview-list'>
+                        <li>
+                          <i class='icon-ok'></i>
+                          Free Domain Name
+                        </li>
+                        <li>
+                          <i class='icon-ok'></i>
+                          Free Access to
+                          <a href='#'>App Store</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='plan-slider-w'>
+                    <h4>Select web space</h4>
+                    <div class='plan-slider-i'>
+                      <div class='space-slider'></div>
+                    </div>
+                  </div>
+                  <div class='plan-slider-description'>
+                    <div class='plan-slider-desc-left'>
+                      <span>|</span><br/>1 Gb
+                    </div>
+                    <div class='plan-slider-desc-middle'>
+                      <span>|</span><br/>5 Gb
+                    </div>
+                    <div class='plan-slider-desc-right'>
+                      <span>|</span><br/>25 Gb
+                    </div>
+                  </div>
+                  <div class='plan-overview'>
+                    <strong>Everything unlimited:</strong> websites, databases, email addresses and data transfer.<br/><br/>
+                  </div>
+                </div>
+                <img src='../assets/images/plan-shadow-bottom-tp.png'>
+                <div class='plan-button'>
+                  <a class='btn btn-primary' href='#'>
+                    Get Started
+                    <i class='icon-circle-arrow-right'></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='span4'>
+            <div class='hosting-plan-w plan-pro'>
+              <div class='hosting-plan'>
+                <h3 class='plan-name'>Pro</h3>
+                <img src='../assets/images/plan-shadow-top-tp.png'>
+                <div class='plan-details'>
+                  <div class='row-fluid'>
+                    <div class='span5'>
+                      <div class='plan-price-w'>
+                        <div class='plan-price'>$<span>9</span>.99</div>
+                        <div class='plan-price-desc'>
+                          <span>per month</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='span7'>
+                      <ul class='plan-overview-list'>
+                        <li>
+                          <i class='icon-ok'></i>
+                          Free Domain Name
+                        </li>
+                        <li>
+                          <i class='icon-ok'></i>
+                          Free Access to
+                          <a href='#'>App Store</a>
+                        </li>
+                        <li>
+                          <i class='icon-ok'></i>
+                          Reseller Enabled
+                        </li>
+                        <li>
+                          <i class='icon-ok'></i>
+                          SSD Powered
+                        </li>
+                        <li>
+                          <i class='icon-ok'></i>
+                          High performance
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='plan-slider-w'>
+                    <h4>Select web space</h4>
+                    <div class='plan-slider-i'>
+                      <div class='space-slider'></div>
+                    </div>
+                  </div>
+                  <div class='plan-slider-description'>
+                    <div class='plan-slider-desc-left'>
+                      <span>|</span><br/>5 Gb
+                    </div>
+                    <div class='plan-slider-desc-middle'>
+                      <span>|</span><br/>10 Gb
+                    </div>
+                    <div class='plan-slider-desc-right'>
+                      <span>|</span><br/>20 Gb
+                    </div>
+                  </div>
+                  <div class='plan-overview'>
+                    <strong>Everything unlimited:</strong> websites, databases, email addresses and data transfer. Additional modules needed for developers can be installed on request
+                  </div>
+                </div>
+                <img src='../assets/images/plan-shadow-bottom-tp.png'>
+                <div class='plan-button'>
+                  <a class='btn btn-primary' href='#'>
+                    Get Started
+                    <i class='icon-circle-arrow-right'></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='span4'>
+            <div class='hosting-plan-w plan-business'>
+              <div class='hosting-plan'>
+                <h3 class='plan-name'>Business</h3>
+                <img src='../assets/images/plan-shadow-top-tp.png'>
+                <div class='plan-details'>
+                  <div class='row-fluid'>
+                    <div class='span5'>
+                      <div class='plan-price-w'>
+                        <div class='plan-price smaller'>$<span>129</span>.99</div>
+                        <div class='plan-price-desc'>
+                          <span>per month</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='span7'>
+                      <ul class='plan-overview-list'>
+                        <li>
+                          <i class='icon-ok'></i>
+                          Free Domain Name
+                        </li>
+                        <li>
+                          <i class='icon-ok'></i>
+                          Free Access to
+                          <a href='#'>App Store</a>
+                        </li>
+                        <li>
+                          <i class='icon-ok'></i>
+                          Reseller Enabled
+                        </li>
+                        <li>
+                          <i class='icon-ok'></i>
+                          SSD Powered
+                        </li>
+                        <li>
+                          <i class='icon-ok'></i>
+                          Best performance
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class='plan-slider-w'>
+                    <h4>Select web space</h4>
+                    <div class='plan-slider-i'>
+                      <div class='space-slider'></div>
+                    </div>
+                  </div>
+                  <div class='plan-slider-description'>
+                    <div class='plan-slider-desc-left'>
+                      <span>|</span><br/>60 Gb
+                    </div>
+                    <div class='plan-slider-desc-right'>
+                      <span>|</span><br/>120 Gb
+                    </div>
+                  </div>
+                  <div class='plan-overview'>
+                    <strong>Everything unlimited:</strong> websites, databases, email addresses and data transfer. Additional modules needed for developers can be installed on request
+                  </div>
+                </div>
+                <img src='../assets/images/plan-shadow-bottom-tp.png'>
+                <div class='plan-button'>
+                  <a class='btn btn-primary' href='#'>
+                    Get Started
+                    <i class='icon-circle-arrow-right'></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class='pre-footer'>
     <div class='container'>

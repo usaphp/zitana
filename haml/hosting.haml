@@ -1,8 +1,11 @@
 !!! 5
 %html{:lang => "en"}
 %head
-  %meta{:charset => "UTF-8"}/
-  %link{:rel => "stylesheet", :href => "../assets/css/main.css"}/
+  %meta{:charset => "UTF-8"}
+  %link{:rel => "stylesheet", :href => "../assets/css/main.css"}
+  %script{:type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+  %script{:type => "text/javascript", :src => "../assets/js/jquery-ui-1.10.2.custom.min.js"}
+  %script{:type => "text/javascript", :src => "../assets/js/main.js"}
   %title Document
 %body
   .navbar.navbar-inverse
@@ -84,6 +87,142 @@
                 %span garden
   #page-hosting.page-content.with-tab-menu
     .container
+      / %h1.page-heading.text-center Hosting Pricing Plans
+      .hosting-plans-w
+        .row-fluid
+          .span4
+            .hosting-plan-w
+              .hosting-plan.plan-easy
+                %h3.plan-name Easy
+                %img{:src => "../assets/images/plan-shadow-top-tp.png"}
+                .plan-details
+                  .row-fluid
+                    .span5
+                      .plan-price-w
+                        .plan-price $<span>3</span>.99
+                        .plan-price-desc
+                          %span per month
+                    .span7
+                      %ul.plan-overview-list
+                        %li
+                          %i.icon-ok
+                          Free Domain Name
+                        %li
+                          %i.icon-ok
+                          Free Access to
+                          %a{:href => "#"} App Store
+                  .plan-slider-w
+                    %h4 Select web space
+                    .plan-slider-i
+                      .space-slider
+                  .plan-slider-description
+                    .plan-slider-desc-left
+                      <span>|</span><br/>1 Gb
+                    .plan-slider-desc-middle
+                      <span>|</span><br/>5 Gb
+                    .plan-slider-desc-right
+                      <span>|</span><br/>25 Gb
+                  .plan-overview
+                    <strong>Everything unlimited:</strong> websites, databases, email addresses and data transfer.<br/><br/>
+                %img{:src => "../assets/images/plan-shadow-bottom-tp.png"}
+                .plan-button
+                  %a.btn.btn-primary{:href => "#"}
+                    Get Started
+                    %i.icon-circle-arrow-right
+          .span4
+            .hosting-plan-w.plan-pro
+              .hosting-plan
+                %h3.plan-name Pro
+                %img{:src => "../assets/images/plan-shadow-top-tp.png"}
+                .plan-details
+                  .row-fluid
+                    .span5
+                      .plan-price-w
+                        .plan-price $<span>9</span>.99
+                        .plan-price-desc
+                          %span per month
+                    .span7
+                      %ul.plan-overview-list
+                        %li
+                          %i.icon-ok
+                          Free Domain Name
+                        %li
+                          %i.icon-ok
+                          Free Access to
+                          %a{:href => "#"} App Store
+                        %li
+                          %i.icon-ok
+                          Reseller Enabled
+                        %li
+                          %i.icon-ok
+                          SSD Powered
+                        %li
+                          %i.icon-ok
+                          High performance
+                  .plan-slider-w
+                    %h4 Select web space
+                    .plan-slider-i
+                      .space-slider
+                  .plan-slider-description
+                    .plan-slider-desc-left
+                      <span>|</span><br/>5 Gb
+                    .plan-slider-desc-middle
+                      <span>|</span><br/>10 Gb
+                    .plan-slider-desc-right
+                      <span>|</span><br/>20 Gb
+                  .plan-overview
+                    <strong>Everything unlimited:</strong> websites, databases, email addresses and data transfer. Additional modules needed for developers can be installed on request
+                %img{:src => "../assets/images/plan-shadow-bottom-tp.png"}
+                .plan-button
+                  %a.btn.btn-primary{:href => "#"}
+                    Get Started
+                    %i.icon-circle-arrow-right
+          .span4
+            .hosting-plan-w.plan-business
+              .hosting-plan
+                %h3.plan-name Business
+                %img{:src => "../assets/images/plan-shadow-top-tp.png"}
+                .plan-details
+                  .row-fluid
+                    .span5
+                      .plan-price-w
+                        .plan-price.smaller $<span>129</span>.99
+                        .plan-price-desc
+                          %span per month
+                    .span7
+                      %ul.plan-overview-list
+                        %li
+                          %i.icon-ok
+                          Free Domain Name
+                        %li
+                          %i.icon-ok
+                          Free Access to
+                          %a{:href => "#"} App Store
+                        %li
+                          %i.icon-ok
+                          Reseller Enabled
+                        %li
+                          %i.icon-ok
+                          SSD Powered
+                        %li
+                          %i.icon-ok
+                          Best performance
+                  .plan-slider-w
+                    %h4 Select web space
+                    .plan-slider-i
+                      .space-slider
+                  .plan-slider-description
+                    .plan-slider-desc-left
+                      <span>|</span><br/>60 Gb
+                    .plan-slider-desc-right
+                      <span>|</span><br/>120 Gb
+                  .plan-overview
+                    <strong>Everything unlimited:</strong> websites, databases, email addresses and data transfer. Additional modules needed for developers can be installed on request
+                %img{:src => "../assets/images/plan-shadow-bottom-tp.png"}
+                .plan-button
+                  %a.btn.btn-primary{:href => "#"}
+                    Get Started
+                    %i.icon-circle-arrow-right
   .pre-footer
     .container
       .row

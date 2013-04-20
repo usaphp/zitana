@@ -1,7 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Droid+Sans:400,700);
 @import "bootstrap/bootstrap.less";
 @import "bootstrap/responsive.less";
 @import "fontawesome/font-awesome.less";
+@import "control-slider.less";
 
 /* CUSTOM MIXINS */
 
@@ -652,6 +653,195 @@ ul.categories-list {
   }
   img {
     margin: @baseLineHeight 0px;
+  }
+}
+
+/****************/
+/**** PLANS *****/
+/****************/
+.hosting-plans-w {
+  margin-bottom: 50px;
+}
+.hosting-plan-w {
+  padding-top: 30px;
+  &.plan-pro {
+    padding-top: 0px;
+    .plan-name {
+      // border-bottom: 15px solid #C2E2F9;
+    }
+  }
+}
+.hosting-plan {
+  text-align: center;
+  .box-shadow(~"0px 4px 15px 0px rgba(0,0,0,0.2), inset 3px 3px 3px 0px #fff, inset -3px 3px 3px 0px #fff, inset 0px -3px 3px 0px #F2EEE6");
+  background-color: #fcfbf8;
+  border: 1px solid #E0D7C5;
+  border-bottom: 1px solid #C9BCA3;
+  .border-radius(4px);
+
+  .plan-name {
+    background-color: #fff;
+    text-shadow: 0px 2px 2px #fff;
+    padding: 25px 15px;
+    margin-top: 0px;
+    position: relative;
+    margin-bottom: 0px;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #665E4E;
+    .border-radius(4px 4px 0px 0px);
+  }
+  .plan-details {
+    padding-top: 10px;
+  }
+  .plan-overview-list {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    li {
+      margin-bottom: 5px;
+      font-size: 12px;
+      line-height: 14px;
+      i {
+        color: #658926;
+        margin-right: 5px;
+      }
+      .feature-yellow {
+        background-color: #ffcc43;
+        color: #776023;
+        padding: 0px 3px;
+        .border-radius(4px);
+      }
+    }
+  }
+  .plan-button {
+    padding: 25px 0px;
+    background-color: #fff;
+    .border-radius(0px 0px 4px 4px);
+  }
+  .plan-overview {
+    padding: 15px 30px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #6a6555;
+    background-color: #fcf9ee;
+    margin: 0px 30px;
+    // .border-radius(8px);
+    font-weight: @fontWeightThin;
+    .box-shadow(~"inset 0px 2px 1px 0px rgba(0,0,0,0.07)");
+    // border: 1px solid #ebe5d1;
+    border-top: 1px solid #d2c8aa;
+  }
+}
+.plan-price-w {
+  text-align: right;
+}
+.plan-price {
+  font-family: @serifFontFamily;
+  font-weight: @fontWeightBold;
+  text-shadow: 2px 2px 2px #fff;
+  line-height: 48px;
+  margin-bottom: 5px;
+  color: #667C44;
+  font-size: 20px;
+  span {
+    line-height: 54px;
+    font-size: 62px;
+    margin-left: 4px;
+    vertical-align: text-top;
+  }
+  &.smaller {
+    span {
+      line-height: 40px;
+      font-size: 44px;
+    }
+  }
+}
+.plan-price-desc {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: @fontWeightThin;
+  span {
+    border-top: 3px solid #eee;
+    padding-top: 3px
+  }
+}
+
+.plan-slider-w {
+  padding: 10px 50px 0px;
+
+  h4 {
+    font-size: 14px;
+    color: #968a76;
+    border-top: 1px dashed #d7ccb9;
+    padding-top: 15px;
+    margin-top: 0px;
+  }
+  .plan-slider-i {
+    padding: 10px;
+    background-color: #F7F5ED;
+    .border-radius(10px);
+  }
+
+  .space-slider {
+    background-color: #EDE8D3;
+    .box-shadow(~"inset 0px 3px 3px 0px rgba(0,0,0,0.15), 0px 2px 2px 0px #fff");
+    .border-radius(6px);
+    border: 1px solid #B5A982;
+    border-bottom: 1px solid lighten(#B2A67C, 20%);
+    border-top: 1px solid darken(#B2A67C, 10%);
+  }
+}
+
+.plan-slider-description {
+  .clearfix();
+  padding: 0px 20px;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 40px;
+  span {
+    font-size: 8px;
+  }
+  .plan-slider-desc-left {
+    float: left;
+    width: 25%;
+  }
+  .plan-slider-desc-middle {
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+  .plan-slider-desc-right {
+    float: right;
+    width: 25%;
+  }
+}
+
+/* SPECIFIC TO PLAN TYPE CSS */
+.plan-easy {
+  .plan-details {
+    padding-top: 0px;
+  }
+  .plan-overview-list {
+    margin-left: 20px;
+    padding-top: 25px;
+  }
+  .plan-price-desc {
+    margin-bottom: 12px;
+  }
+}
+.plan-pro {
+  .plan-overview-list {
+    margin-left: 20px;
+    margin-bottom: 35px;
+    padding-top: 5px;
+  }
+}
+.plan-business {
+  .plan-overview-list {
+    margin-left: 20px;
+    margin-bottom: 10px;
   }
 }
 
