@@ -8606,6 +8606,10 @@ ul.icons li [class*=" icon-"] {
 .ui-slider-horizontal .ui-slider-handle {
   top: -15px;
   margin-left: -20px;
+  -webkit-transition: 0.1s linear left;
+  -moz-transition: 0.1s linear left;
+  -o-transition: 0.1s linear left;
+  transition: 0.1s linear left;
 }
 .ui-slider-horizontal .ui-slider-range {
   top: 0;
