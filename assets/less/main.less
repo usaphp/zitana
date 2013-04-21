@@ -18,12 +18,35 @@
   }
 }
 
+.feature-image {
+  .box-shadow(0px 2px 12px 0px rgba(0,0,0,0.3));
+  margin-bottom: 40px;
+}
+.side-feature-image {
+  margin-right: 20px;
+}
+.bordered-image-w {
+  padding: 15px;
+  .box-shadow(0px 2px 12px 0px rgba(0,0,0,0.3));
+  margin-top: 15px;
+  border: 1px solid #617c8c;
+  img {
+    margin: 0px!important;
+    display: block;
+  }
+}
+
 h1.page-heading {
   border-bottom: 1px solid #e8e5de;
-  .box-shadow(0px 2px 0px 0px #fff);
+  .box-shadow(0px 2px 0px 0px rgba(255,255,255,0.8));
   padding-bottom: 20px;
   text-shadow: 0px 2px 2px #fff;
   margin-bottom: 30px;
+}
+.page-sub-heading {
+  font-weight: @fontWeightThin;
+  margin-top: -20px;
+  margin-bottom: 40px;
 }
 
 .services-tabs-w {
@@ -106,6 +129,10 @@ h1.page-heading {
   #gradient > .vertical(#f5f3ed, lighten(#f5f3ed, 3%));
   .box-shadow(~"0px 0px 10px 0px rgba(0, 0, 0, 0.2), inset 0px 3px 2px 0px rgba(255,255,255,0.8), inset 0px -4px 2px 0px rgba(255,255,255,0.9)");
   position: relative;
+
+  &.content-less-padding {
+    padding-top: 10px;
+  }
 
   // Page that has top menu (tabs)
   &.with-tab-menu {
@@ -655,6 +682,70 @@ ul.categories-list {
   }
 }
 
+
+
+/****************/
+/**** BUILD YOUR WEBSITE *****/
+/****************/
+#page-build-website {
+  .lead-box-w {
+    margin-bottom: 25px;
+  }
+  .lead-box {
+    h1 {
+      border-bottom: 1px solid #e8e5de;
+      .box-shadow(0px 2px 0px 0px #fff);
+      padding-bottom: 15px;
+      text-shadow: 0px 2px 2px #fff;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 30px;
+      color: #6b6757;
+      font-weight: @fontWeightThin;
+    }
+    .btn {
+      font-size: 24px;
+      line-height: 36px;
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+/****************/
+/**** FEATURES *****/
+/****************/
+.big-feature-w {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+.big-feature-header {
+  i {
+    margin-right: 8px;
+  }
+}
+.big-features {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  list-style: square;
+  li {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    line-height: 22px;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
 /****************/
 /**** PLANS *****/
 /****************/
@@ -836,12 +927,47 @@ ul.categories-list {
     margin-bottom: 35px;
     padding-top: 5px;
   }
+  .hosting-plan {
+    background-color: #fff;
+  }
 }
 .plan-business {
   .plan-overview-list {
     margin-left: 7px;
     margin-bottom: 10px;
   }
+}
+
+#page-hosting {
+  .page-heading {
+  }
+}
+
+/****************/
+/**** ZITANA GARDEN ****/
+/****************/
+#page-garden {
+
+}
+.app-item-w {
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: #fff;
+  padding: 20px;
+}
+.app-item-photo {
+  // padding: 10px;
+  // background-color: #fff;
+  // border: 1px solid #eee7d9;
+  margin-bottom: 15px;
+}
+.app-item-header {
+  border-bottom: 1px solid #d4d1c3;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.app-item-desc {
+  font-weight: @fontWeightThin;
 }
 
 /****************/
