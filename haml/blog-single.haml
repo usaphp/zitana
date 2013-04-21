@@ -1,0 +1,271 @@
+!!! 5
+%html{:lang => "en"}
+%head
+  %meta{:charset => "UTF-8"}/
+  %link{:rel => "stylesheet", :href => "../assets/css/main.css"}/
+  %title Document
+%body
+  .navbar.navbar-inverse
+    .navbar-inner
+      .container
+        .row
+          .span2
+            %a.brand{:href => "domain.html"}
+              %img{:src => "../assets/images/logo.png", :alt => ""}
+          .language-switcher.pull-right
+            %ul
+              %li.active
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+              %li
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+              %li
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+          %form.navbar-search.pull-right{:action => "search-results.html"}
+            %input{:type => "text", :class => "search-query", :placeholder => "Search"}
+          .nav-collapse.collapse.pull-right
+            %ul.nav
+              %li
+                %a{:href => "contact.html"}
+                  %i.icon-envelope-alt
+                  Contact Us
+              %li
+                %a{:href => "documentation-categories.html"}
+                  %i.icon-info-sign
+                  Documentation
+              %li
+                %a{:href => "cart.html"}
+                  %i.icon-shopping-cart
+                  Cart
+              %li
+                %a{:href => "#"}
+                  %i.icon-user
+                  Login
+  .page-content
+    .container
+      .row
+        .span8
+          %ul.breadcrumb
+            %li
+              %a{:href => "documentation-categories.html"} Zitana Blog Home
+            %li
+              %a{:href => "documentation-categories.html"} Server Setup
+            %li.active Introducing new feature launched today
+          .white-paper
+            .wp-header
+              %h1 Introducing new feature launched today
+              .last-update on March 15, 2013 12:10 pm
+            .wp-content
+              %p Smartphone batteries pretty much suck. With rare exceptions, manufacturers have decided that a thin and light phone is more important than one with stellar battery life. Phones used to last days between charges, but today's smartphones are lucky to last a single day before tapping out. This isn’t more evident than with the iPhone 5: Apple managed to make a phone slimmer and lighter than the previous iPhone 4S, but its mediocre battery life stayed the same. While Motorola has released a couple of smartphones with colossal batteries (the Droid RAZR Maxx and RAZR Maxx HD), Apple has been content with keeping the battery life the same across a few generations of the iPhone. It’s possible to get the iPhone 5 to last all day with light usage, but most heavy users find themselves charging it throughout the day to get it to last from dawn to dusk.
+              %p That's where Mophie's line of Juice Pack cases comes in. Mophie has been making cases with built-in batteries for the iPhone ever since the iPhone 3G in 2008 and it finally released iPhone 5-compatible versions earlier this year. As someone who constantly deals with a dead smartphone, I’ve relied on Mophie cases to get me through the day for years. Therefore, I was eager to try out the new Helium and Air cases for the iPhone 5 to see if they could solve my battery dilemmas.
+              %blockquote That wouldn't be so much of a problem, except that the Juice Packs' micro-USB ports don't allow for syncing or data transfer — they just charge the battery. That means whenever you need to sync your phone with your computer over USB, or if you tether your iPhone over USB
+              %p The Juice Pack Helium and the Juice Pack Air are pretty similar: both are sled-style cases that you slide the iPhone into. The cases essentially double the thickness of the iPhone, and add about 62 to 68 percent more weight to it. Both have soft-touch finishes, and on / off switches and capacity meters on their backs. The differences between the two are minimal: the Helium is ever so slightly thinner (0.04 inches) and lighter (0.24 ounces), but has less battery capacity (1,500mAh vs. 1,700mAh) than the Air. The Air also has better build quality, with pass-through style buttons for volume and power instead of the Helium’s simple cutaways.
+              %p Mophie says the Helium will get you 80 percent more battery life from your iPhone 5, or roughly an additional six hours of talk time before you need to plug it in. In my tests, the Helium was able to recharge the iPhone from zero to about 66 percent full before running out of juice. Though that's not quite up to Mophie’s claims, it's plenty enough to get most anyone through the day without having to worry about their iPhone dying during happy hour at the bar. You won’t be going a solid two days with heavy usage on the Helium, but you can take full advantage of your iPhone’s features without being concerned too much about the battery dying on you.
+              %p Similarly, Mophie claims that the Air case will net 100 percent more battery life, or an additional eight hours of talk time. As with the Helium, my tests with the Air didn't quite match Mophie's claims — a full charge from zero brought the iPhone to about 80 percent full — but it kept me off an outlet the entire day, and even into the next day if I played my cards right.
+              .about-author-w
+                %h3 About Author
+                .row-fluid
+                  .span2
+                    .round-image-w.author-avatar
+                      %img{:src => "http://dummyimage.com/200x200/3681b6/fff", :alt => ""}/
+                  .span10
+                    %h4.author-name Leo Messi
+                    %p.author-desc Lionel Andrés "Leo" Messi is an Argentine footballer who plays as a forward for La Liga club FC Barcelona and the Argentina national team. He serves as the captain of his country's national football team.
+          .post-navigation
+            .row-fluid
+              .span6
+                %a.pull-left.prev-link{:href => "#"}
+                  %i.icon-circle-arrow-left
+                  Prev Post
+              .span6
+                %a.pull-right.next-link{:href => "#"}
+                  Next Post
+                  %i.icon-circle-arrow-right
+          .white-paper
+            .wp-header
+              %h1
+                %i.icon-comments
+                Comments
+            .wp-content
+              %form{:action => "#"}
+                .row-fluid
+                  .span6
+                    %label{:for => ""} Full Name
+                    %input.input-block-level{:type => "text", :placeholder => "Your Full Name"}
+                  .span6
+                    %label{:for => ""} Your Email
+                    %input.input-block-level{:type => "text", :placeholder => "Your Email Address"}
+                .row-fluid
+                  .span12
+                    %label{:for => ""} Your Comment
+                    %textarea.input-block-level{:type => "text", :placeholder => "Your comment text", :rows => "5"}
+                .form-actions
+                  %button.btn.btn-primary Submit Comment
+          .post-comments-w
+            %h3.comments-title Current Comments
+            %ol.post-comment-list
+              %li
+                %article.comment
+                  .row-fluid
+                    .span1
+                      %img.avatar{:alt => "", :src => "http://dummyimage.com/200x200/3681b6/fff"}
+                    .span11
+                      .comment-content
+                        %p Testing this awesome post comments.
+                      %footer
+                        .comment-meta
+                          by admin on April 8, 2013 at 5:48 am
+                        .reply
+                          %a.comment-reply-link{:href => "#"} Reply
+              %li
+                %article.comment
+                  .row-fluid
+                    .span1
+                      %img.avatar{:alt => "", :src => "http://dummyimage.com/200x200/3681b6/fff"}
+                    .span11
+                      .comment-content
+                        %p Funny that you already have since almost everything uses some sort of standard usb… and apple that uses their crappy proprietary stuff, so yeah, maybe by using this you could actualy have only one kind of cord
+                      %footer
+                        .comment-meta
+                          by admin on April 8, 2013 at 5:48 am
+                        .reply
+                          %a.comment-reply-link{:href => "#"} Reply
+              %li
+                %article.comment
+                  .row-fluid
+                    .span1
+                      %img.avatar{:alt => "", :src => "http://dummyimage.com/200x200/3681b6/fff"}
+                    .span11
+                      .comment-content
+                        %p Siri is a gimmick, photo transferring is a real useful feature, one of those which are in the smartphone. MMS is obsolete for me, I am not experiencing problems with that. And apple ads are making me puke, I am switching tv channel immediately. Outdated same looking single tasking devices, with those kid’s style music at the background as if an baby going to poop.
+                      %footer
+                        .comment-meta
+                          by admin on April 8, 2013 at 5:48 am
+                        .reply
+                          %a.comment-reply-link{:href => "#"} Reply
+        .span4
+          .side-menu-w
+            .side-menu-i
+              %h3.bordered
+                %i.icon-reorder
+                Blog Categories
+              %ul
+                %li
+                  %a{:href => "#"} Getting Started
+                %li
+                  %a{:href => "#"} Authentication
+                %li
+                  %a{:href => "#"} Libraries & Plugins
+                %li
+                  %a{:href => "#"} Response Codes
+                %li
+                  %a{:href => "#"} Database Installation
+                %li
+                  %a{:href => "#"} Getting Started
+                %li
+                  %a{:href => "#"} Authentication
+                %li
+                  %a{:href => "#"} Libraries & Plugins
+                %li
+                  %a{:href => "#"} Response Codes
+                %li
+                  %a{:href => "#"} Database Installation
+          .side-menu-w
+            .side-menu-i
+              %h3.bordered
+                %i.icon-tags
+                Popular Tags
+              .side-tags-w
+                %a{:href => "#"} Design
+                %a{:href => "#"} Development
+                %a{:href => "#"} Ruby
+                %a{:href => "#"} Mysql
+                %a{:href => "#"} Security
+                %a{:href => "#"} Hosting
+                %a{:href => "#"} Domain
+                %a{:href => "#"} Analytics
+                %a{:href => "#"} Optimization
+                %a{:href => "#"} Design
+                %a{:href => "#"} Development
+                %a{:href => "#"} Ruby
+                %a{:href => "#"} Mysql
+                %a{:href => "#"} Security
+                %a{:href => "#"} Hosting
+                %a{:href => "#"} Domain
+                %a{:href => "#"} Analytics
+                %a{:href => "#"} Optimization
+          .side-menu-w
+            .side-menu-i
+              %h3.bordered
+                %i.icon-file-alt
+                Recent Posts
+              %ul
+                %li
+                  %a{:href => "#"} Duis pellentesque lacinia eros ornare.
+                %li
+                  %a{:href => "#"} Mauris sed risus bibendum purus tempor.
+                %li
+                  %a{:href => "#"} Mauris porta orci sed lectus tempus mollis.
+  .pre-footer
+    .container
+      .row
+        .span9
+          .menu-list
+            %h4.menu-header Web Hosting
+            %ul
+              %li
+                %a{:href => "#"} Order Hosting
+              %li
+                %a{:href => "#"} Compare Plan
+              %li
+                %a{:href => "#"} Register Domain
+          .menu-list
+            %h4.menu-header Company
+            %ul
+              %li
+                %a{:href => "#"} About Us
+              %li
+                %a{:href => "contact.html"} Contact Us
+              %li
+                %a{:href => "#"} In the News
+          .menu-list
+            %h4.menu-header Support
+            %ul
+              %li
+                %a{:href => "documentation-categories.html"} Documentation
+              %li
+                %a{:href => "#"} System Status
+              %li
+                %a{:href => "#"} Knowledge Base
+              %li
+                %a{:href => "#"} Account Login
+        .span3
+          .social-w
+            %h4.menu-header Social Networks
+            %ul.social-list
+              %li
+                %a{:href => "#"}
+                  %i.icon-linkedin-sign
+              %li
+                %a{:href => "#"}
+                  %i.icon-twitter-sign
+              %li
+                %a{:href => "#"}
+                  %i.icon-facebook-sign
+  %footer.deep-footer
+    .container
+      .row
+        .span4
+          .copyright &copy; 2013 Zitana.com All rights reserved.
+        .span8
+          %ul.deep-footer-menu.pull-right
+            %li
+              %a{:href => "privacy-policy.html"} Privacy Policy
+            %li
+              %a{:href => "privacy-policy.html"} Terms of Service
+            %li
+              %a{:href => "#"} About Us
+            %li
+              %a{:href => "contact.html"} Contact Us
