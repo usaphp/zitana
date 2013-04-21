@@ -1,0 +1,223 @@
+!!! 5
+%html{:lang => "en"}
+%head
+  %meta{:charset => "UTF-8"}/
+  %link{:rel => "stylesheet", :href => "../assets/css/main.css"}/
+  %title Document
+%body
+  .navbar.navbar-inverse
+    .navbar-inner
+      .container
+        .row
+          .span2
+            %a.brand{:href => "domain.html"}
+              %img{:src => "../assets/images/logo.png", :alt => ""}
+          .language-switcher.pull-right
+            %ul
+              %li.active
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+              %li
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+              %li
+                %a{:href => "#"}
+                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+          %form.navbar-search.pull-right{:action => "search-results.html"}
+            %input{:type => "text", :class => "search-query", :placeholder => "Search"}
+          .nav-collapse.collapse.pull-right
+            %ul.nav
+              %li
+                %a{:href => "contact.html"}
+                  %i.icon-envelope-alt
+                  Contact Us
+              %li
+                %a{:href => "documentation-categories.html"}
+                  %i.icon-info-sign
+                  Documentation
+              %li
+                %a{:href => "cart.html"}
+                  %i.icon-shopping-cart
+                  Cart
+              %li
+                %a{:href => "#"}
+                  %i.icon-user
+                  Login
+  .page-content
+    .container
+      .row
+        .span8
+          %ul.breadcrumb
+            %li
+              %a{:href => "documentation-categories.html"} Zitana Blog Home
+            %li
+              %a{:href => "documentation-categories.html"} Server Setup
+          .white-paper
+            .wp-header
+              %h1 Introducing new feature launched today
+              .last-update on March 15, 2013 12:10 pm
+            .wp-content
+              %p Smartphone batteries pretty much suck. With rare exceptions, manufacturers have decided that a thin and light phone is more important than one with stellar battery life. Phones used to last days between charges, but today's smartphones are lucky to last a single day before tapping out. This isn’t more evident than with the iPhone 5: Apple managed to make a phone slimmer and lighter than the previous iPhone 4S, but its mediocre battery life stayed the same. While Motorola has released a couple of smartphones with colossal batteries.
+              %a.btn.btn-primary{:href => "blog-single.html"} Read More
+          .white-paper
+            .wp-header
+              %h1 Security issues are fixed
+              .last-update on March 15, 2013 12:10 pm
+            .wp-content
+              %p That's where Mophie's line of Juice Pack cases comes in. Mophie has been making cases with built-in batteries for the iPhone ever since the iPhone 3G in 2008 and it finally released iPhone 5-compatible versions earlier this year. As someone who constantly deals with a dead smartphone, I’ve relied on Mophie cases to get me through the day for years. Therefore, I was eager to try out the new Helium and Air cases for the iPhone 5 to see if they could solve my battery dilemmas.
+              %a.btn.btn-primary{:href => "blog-single.html"} Read More
+          .white-paper
+            .wp-header
+              %h1 Tutorial on database setup
+              .last-update on March 15, 2013 12:10 pm
+            .wp-content
+              %p The Juice Pack Helium and the Juice Pack Air are pretty similar: both are sled-style cases that you slide the iPhone into. The cases essentially double the thickness of the iPhone, and add about 62 to 68 percent more weight to it. Both have soft-touch finishes, and on / off switches and capacity meters on their backs. The differences between the two are minimal: the Helium is ever so slightly thinner (0.04 inches) and lighter (0.24 ounces), but has less battery capacity (1,500mAh vs. 1,700mAh) than the Air. The Air also has better build quality, with pass-through style buttons for volume and power instead of the Helium’s simple cutaways.
+              %a.btn.btn-primary{:href => "blog-single.html"} Read More
+          .white-paper
+            .wp-header
+              %h1 Setting up analytics for your blog
+              .last-update on March 15, 2013 12:10 pm
+            .wp-content
+              %p Mophie says the Helium will get you 80 percent more battery life from your iPhone 5, or roughly an additional six hours of talk time before you need to plug it in. In my tests, the Helium was able to recharge the iPhone from zero to about 66 percent full before running out of juice. Though that's not quite up to Mophie’s claims, it's plenty enough to get most anyone through the day without having to worry about their iPhone dying during happy hour at the bar. You won’t be going a solid two days with heavy usage on the Helium, but you can take full advantage of your iPhone’s features without being concerned too much about the battery dying on you.
+              %a.btn.btn-primary{:href => "blog-single.html"} Read More
+          .white-paper
+            .wp-header
+              %h1 Speeding up your website
+              .last-update on March 15, 2013 12:10 pm
+            .wp-content
+              %p Similarly, Mophie claims that the Air case will net 100 percent more battery life, or an additional eight hours of talk time. As with the Helium, my tests with the Air didn't quite match Mophie's claims — a full charge from zero brought the iPhone to about 80 percent full — but it kept me off an outlet the entire day, and even into the next day if I played my cards right.
+              %a.btn.btn-primary{:href => "blog-single.html"} Read More
+          .post-navigation
+            .row-fluid
+              .span6
+                %a.pull-left.prev-link{:href => "#"}
+                  %i.icon-circle-arrow-left
+                  Prev Page
+              .span6
+                %a.pull-right.next-link{:href => "#"}
+                  Next Page
+                  %i.icon-circle-arrow-right
+        .span4
+          .side-menu-w
+            .side-menu-i
+              %h3.bordered
+                %i.icon-reorder
+                Blog Categories
+              %ul
+                %li
+                  %a{:href => "#"} Getting Started
+                %li
+                  %a{:href => "#"} Authentication
+                %li
+                  %a{:href => "#"} Libraries & Plugins
+                %li
+                  %a{:href => "#"} Response Codes
+                %li
+                  %a{:href => "#"} Database Installation
+                %li
+                  %a{:href => "#"} Getting Started
+                %li
+                  %a{:href => "#"} Authentication
+                %li
+                  %a{:href => "#"} Libraries & Plugins
+                %li
+                  %a{:href => "#"} Response Codes
+                %li
+                  %a{:href => "#"} Database Installation
+          .side-menu-w
+            .side-menu-i
+              %h3.bordered
+                %i.icon-tags
+                Popular Tags
+              .side-tags-w
+                %a{:href => "#"} Design
+                %a{:href => "#"} Development
+                %a{:href => "#"} Ruby
+                %a{:href => "#"} Mysql
+                %a{:href => "#"} Security
+                %a{:href => "#"} Hosting
+                %a{:href => "#"} Domain
+                %a{:href => "#"} Analytics
+                %a{:href => "#"} Optimization
+                %a{:href => "#"} Design
+                %a{:href => "#"} Development
+                %a{:href => "#"} Ruby
+                %a{:href => "#"} Mysql
+                %a{:href => "#"} Security
+                %a{:href => "#"} Hosting
+                %a{:href => "#"} Domain
+                %a{:href => "#"} Analytics
+                %a{:href => "#"} Optimization
+          .side-menu-w
+            .side-menu-i
+              %h3.bordered
+                %i.icon-file-alt
+                Recent Posts
+              %ul
+                %li
+                  %a{:href => "#"} Duis pellentesque lacinia eros ornare.
+                %li
+                  %a{:href => "#"} Mauris sed risus bibendum purus tempor.
+                %li
+                  %a{:href => "#"} Mauris porta orci sed lectus tempus mollis.
+  .pre-footer
+    .container
+      .row
+        .span9
+          .menu-list
+            %h4.menu-header Web Hosting
+            %ul
+              %li
+                %a{:href => "#"} Order Hosting
+              %li
+                %a{:href => "#"} Compare Plan
+              %li
+                %a{:href => "#"} Register Domain
+          .menu-list
+            %h4.menu-header Company
+            %ul
+              %li
+                %a{:href => "#"} About Us
+              %li
+                %a{:href => "contact.html"} Contact Us
+              %li
+                %a{:href => "#"} In the News
+          .menu-list
+            %h4.menu-header Support
+            %ul
+              %li
+                %a{:href => "documentation-categories.html"} Documentation
+              %li
+                %a{:href => "#"} System Status
+              %li
+                %a{:href => "#"} Knowledge Base
+              %li
+                %a{:href => "#"} Account Login
+        .span3
+          .social-w
+            %h4.menu-header Social Networks
+            %ul.social-list
+              %li
+                %a{:href => "#"}
+                  %i.icon-linkedin-sign
+              %li
+                %a{:href => "#"}
+                  %i.icon-twitter-sign
+              %li
+                %a{:href => "#"}
+                  %i.icon-facebook-sign
+  %footer.deep-footer
+    .container
+      .row
+        .span4
+          .copyright &copy; 2013 Zitana.com All rights reserved.
+        .span8
+          %ul.deep-footer-menu.pull-right
+            %li
+              %a{:href => "privacy-policy.html"} Privacy Policy
+            %li
+              %a{:href => "privacy-policy.html"} Terms of Service
+            %li
+              %a{:href => "#"} About Us
+            %li
+              %a{:href => "contact.html"} Contact Us
