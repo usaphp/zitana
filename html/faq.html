@@ -3,6 +3,11 @@
 <head>
   <meta charset='UTF-8'>
   <link href='../assets/css/main.css' rel='stylesheet'>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' type='text/javascript'></script>
+  <script src='../assets/js/jquery-ui-1.10.2.custom.min.js' type='text/javascript'></script>
+  <script src='../assets/js/bootstrap/bootstrap-tooltip.js' type='text/javascript'></script>
+  <script src='../assets/js/bootstrap/bootstrap-popover.js' type='text/javascript'></script>
+  <script src='../assets/js/doc-entry.js' type='text/javascript'></script>
   <title>Document</title>
 </head>
 <body>
@@ -55,6 +60,7 @@
                 <a href='cart.html'>
                   <i class='icon-shopping-cart'></i>
                   Cart
+                  <span class='badge badge-cart'>2</span>
                 </a>
               </li>
               <li>
@@ -69,106 +75,53 @@
       </div>
     </div>
   </div>
-  <div class='services-tabs-w'>
+  <div class='page-content'>
     <div class='container'>
-      <div class='service-tabs-i'>
-        <div class='service-tab-w'>
-          <a class='service-tab' href='domain.html'>
-            <div class='row-fluid'>
-              <div class='span3'>
-                <i class='icon-search service-icon'></i>
-              </div>
-              <div class='span9'>
-                Find your
-                <br>
-                <span>domain</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class='service-tab-w active'>
-          <a class='service-tab' href='build-website.html'>
-            <div class='row-fluid'>
-              <div class='span3'>
-                <i class='icon-globe service-icon'></i>
-              </div>
-              <div class='span9'>
-                Build your
-                <br>
-                <span>website</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class='service-tab-w tab-hosting'>
-          <a class='service-tab' href='hosting.html'>
-            <div class='row-fluid'>
-              <div class='span4'>
-                <i class='icon-cloud service-icon'></i>
-              </div>
-              <div class='span8'>
-                Website
-                <br>
-                <span>hosting</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class='service-tab-w'>
-          <a class='service-tab' href='garden.html'>
-            <div class='row-fluid'>
-              <div class='span3'>
-                <i class='icon-cogs service-icon'></i>
-              </div>
-              <div class='span9'>
-                Hosting
-                <br>
-                <span>garden</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class='page-content with-tab-menu' id='page-build-website'>
-    <div class='container'>
-      <div class='lead-box-w'>
-        <div class='row'>
-          <div class='span7'>
-            <div class='lead-box'>
-              <h1>Build your own website with Zitana</h1>
-              <p>Vivamus sed diam nisl, eget hendrerit quam. Etiam ut ante hendrerit augue ullamcorper laoreet. Proin porta consequat felis sed suscipit. Morbi consectetur molestie est, non varius ligula viverra et.</p>
-              <a class='btn btn-warning btn-large' href='#'>
-                <i class='icon-wrench'></i>
-                Start Building Your Site
-              </a>
-            </div>
-          </div>
-          <div class='span5'>
-            <img alt='' class='feature-image' src='../assets/images/watch-video-blue.png'>
-          </div>
-        </div>
+      <ul class='breadcrumb'>
+        <li>
+          <a href='documentation-categories.html'>Documentation</a>
+        </li>
+        <li>
+          <a href='documentation-categories.html'>Server Setup</a>
+        </li>
+        <li class='active'>Installing php and mysql on linux server</li>
+      </ul>
+      <div class='back-to-home-w'>
+        <a href='domain.html'>
+          <i class='icon-arrow-left'></i>
+          Back to Home
+        </a>
       </div>
       <div class='white-paper'>
-        <div class='row-fluid'>
-          <div class='span5'>
-            <div class='bordered-image-w side-feature-image'>
-              <img alt='' src='http://dummyimage.com/600x470/3681b6/fff'>
-            </div>
-          </div>
-          <div class='span7'>
-            <h2>
-              <i class='icon-check'></i>
-              Proin porta consequat felis sed.
-            </h2>
-            <ul class='big-features'>
-              <li>Easy and straight forward. No need webdesign or programming skills needed.</li>
-              <li>Different designs tailored to your project, business or organization</li>
-              <li>Give the design a personal touch</li>
-              <li>One plan, unlimited amount of pages and images</li>
-              <li>Easily upgrade to a complex web site</li>
-              <li>Personal assistance and management by Zitana</li>
+        <div class='wp-header'>
+          <h1>
+            <i class='icon-question-sign'></i>
+            FAQ
+          </h1>
+        </div>
+        <div class='wp-content'>
+          <div class='faq-w-full'>
+            <ul>
+              <li>
+                <h3>How do I setup a hosting account?</h3>
+                <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+              </li>
+              <li>
+                <h3>What is a best price for my service?</h3>
+                <p>Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+              </li>
+              <li>
+                <h3>When is my account going to be activated?</h3>
+                <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+              </li>
+              <li>
+                <h3>Why do I have to pay upfront?</h3>
+                <p>Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products.</p>
+              </li>
+              <li>
+                <h3>Where do I find my account number?</h3>
+                <p>Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.</p>
+              </li>
             </ul>
           </div>
         </div>

@@ -16,23 +16,23 @@
             </a>
           </div>
           <div class='language-switcher pull-right'>
-            <ul>
-              <li class='active'>
-                <a href='#'>
-                  <img alt='' src='../assets/images/flags/Belgium.png'>
-                </a>
-              </li>
-              <li>
-                <a href='#'>
-                  <img alt='' src='../assets/images/flags/Belgium.png'>
-                </a>
-              </li>
-              <li>
-                <a href='#'>
-                  <img alt='' src='../assets/images/flags/Belgium.png'>
-                </a>
-              </li>
-            </ul>
+            <a href='#'>
+              <img alt='' src='../assets/images/flags/Belgium.png'>
+            </a>
+            <div class='language-switcher-list-w'>
+              <div class='language-switcher-arrow'></div>
+              <ul class='language-switcher-list'>
+                <li>
+                  <a href='#'>English - Euro</a>
+                </li>
+                <li>
+                  <a href='#'>Dutch - Euro</a>
+                </li>
+                <li>
+                  <a href='#'>English - US dollar</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <form action='search-results.html' class='navbar-search pull-right'>
             <input class='search-query' placeholder='Search' type='text'>
@@ -121,11 +121,16 @@
             </thead>
             <tbody>
               <tr>
-                <td>
-                  <h4 class='item-name'>
-                    Website Hosting
+                <td colspan='4'>
+                  <h4>Website Hosting</h4>
+                </td>
+              </tr>
+              <tr>
+                <td class='item-name-w'>
+                  <h5 class='item-name'>
+                    Basic Plan Hosting
                     <a class='remove' href='#'>[remove]</a>
-                  </h4>
+                  </h5>
                   <ul class='item-details'>
                     <li>
                       plan:
@@ -156,11 +161,51 @@
                 </td>
               </tr>
               <tr>
-                <td>
-                  <h4 class='item-name'>
+                <td class='item-name-w'>
+                  <h5 class='item-name'>
+                    Pro Plan Hosting
+                    <a class='remove' href='#'>[remove]</a>
+                  </h5>
+                  <ul class='item-details'>
+                    <li>
+                      plan:
+                      <strong>basic</strong>
+                    </li>
+                    <li>
+                      domain:
+                      <strong>zitana.com</strong>
+                    </li>
+                  </ul>
+                </td>
+                <td class='cell-center'>
+                  <select class='item-term input-small' name=''>
+                    <option value='5 Years'>5 Years</option>
+                  </select>
+                </td>
+                <td class='cell-right'>
+                  <div class='item-price-unit'>
+                    <strong>$23.15</strong>
+                    /mo
+                  </div>
+                </td>
+                <td class='cell-right'>
+                  <div class='item-price-total'>
+                    <strong>$53.40</strong>
+                    /mo
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan='4'>
+                  <h4>Domains</h4>
+                </td>
+              </tr>
+              <tr>
+                <td class='item-name-w'>
+                  <h5 class='item-name'>
                     Zitana.com
                     <a class='remove' href='#'>[remove]</a>
-                  </h4>
+                  </h5>
                   <ul class='item-details'>
                     <li>
                       <strong>.com</strong>
@@ -187,19 +232,15 @@
                 </td>
               </tr>
               <tr>
-                <td>
-                  <h4 class='item-name'>
-                    Website Hosting
+                <td class='item-name-w'>
+                  <h5 class='item-name'>
+                    Armani.com
                     <a class='remove' href='#'>[remove]</a>
-                  </h4>
+                  </h5>
                   <ul class='item-details'>
                     <li>
-                      plan:
-                      <strong>pro</strong>
-                    </li>
-                    <li>
-                      domain:
-                      <strong>zitana.com</strong>
+                      <strong>.com</strong>
+                      domain registration
                     </li>
                   </ul>
                 </td>
@@ -211,13 +252,75 @@
                 <td class='cell-right'>
                   <div class='item-price-unit'>
                     <strong>$23.15</strong>
-                    /mo
+                    /year
                   </div>
                 </td>
                 <td class='cell-right'>
                   <div class='item-price-total'>
                     <strong>$53.40</strong>
-                    /mo
+                    /year
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class='item-name-w'>
+                  <h5 class='item-name'>
+                    Adidas.com
+                    <a class='remove' href='#'>[remove]</a>
+                  </h5>
+                  <ul class='item-details'>
+                    <li>
+                      <strong>.com</strong>
+                      domain registration
+                    </li>
+                  </ul>
+                </td>
+                <td class='cell-center'>
+                  <select class='item-term input-small' name=''>
+                    <option value='5 Years'>5 Years</option>
+                  </select>
+                </td>
+                <td class='cell-right'>
+                  <div class='item-price-unit'>
+                    <strong>$23.15</strong>
+                    /year
+                  </div>
+                </td>
+                <td class='cell-right'>
+                  <div class='item-price-total'>
+                    <strong>$53.40</strong>
+                    /year
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class='item-name-w'>
+                  <h5 class='item-name'>
+                    Heroku.com
+                    <a class='remove' href='#'>[remove]</a>
+                  </h5>
+                  <ul class='item-details'>
+                    <li>
+                      <strong>.com</strong>
+                      domain registration
+                    </li>
+                  </ul>
+                </td>
+                <td class='cell-center'>
+                  <select class='item-term input-small' name=''>
+                    <option value='5 Years'>5 Years</option>
+                  </select>
+                </td>
+                <td class='cell-right'>
+                  <div class='item-price-unit'>
+                    <strong>$23.15</strong>
+                    /year
+                  </div>
+                </td>
+                <td class='cell-right'>
+                  <div class='item-price-total'>
+                    <strong>$53.40</strong>
+                    /year
                   </div>
                 </td>
               </tr>

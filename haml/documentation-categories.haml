@@ -13,16 +13,17 @@
             %a.brand{:href => "domain.html"}
               %img{:src => "../assets/images/logo.png", :alt => ""}
           .language-switcher.pull-right
-            %ul
-              %li.active
-                %a{:href => "#"}
-                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
-              %li
-                %a{:href => "#"}
-                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
-              %li
-                %a{:href => "#"}
-                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+            %a{:href => "#"}
+              %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+            .language-switcher-list-w
+              .language-switcher-arrow
+              %ul.language-switcher-list
+                %li
+                  %a{:href => "#"} English - Euro
+                %li
+                  %a{:href => "#"} Dutch - Euro
+                %li
+                  %a{:href => "#"} English - US dollar
           %form.navbar-search.pull-right{:action => "search-results.html"}
             %input{:type => "text", :class => "search-query", :placeholder => "Search"}
           .nav-collapse.collapse.pull-right
@@ -45,6 +46,12 @@
                   Login
   .page-content
     .container
+      .row
+        .span12
+          .back-to-home-w
+            %a{:href => "domain.html"}
+              %i.icon-arrow-left
+              Back to Home
       .row
         .span8
           .search-box-w

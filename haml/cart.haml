@@ -13,16 +13,17 @@
             %a.brand{:href => "domain.html"}
               %img{:src => "../assets/images/logo.png", :alt => ""}
           .language-switcher.pull-right
-            %ul
-              %li.active
-                %a{:href => "#"}
-                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
-              %li
-                %a{:href => "#"}
-                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
-              %li
-                %a{:href => "#"}
-                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+            %a{:href => "#"}
+              %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+            .language-switcher-list-w
+              .language-switcher-arrow
+              %ul.language-switcher-list
+                %li
+                  %a{:href => "#"} English - Euro
+                %li
+                  %a{:href => "#"} Dutch - Euro
+                %li
+                  %a{:href => "#"} English - US dollar
           %form.navbar-search.pull-right{:action => "search-results.html"}
             %input{:type => "text", :class => "search-query", :placeholder => "Search"}
           .nav-collapse.collapse.pull-right
@@ -80,9 +81,12 @@
                 %th.cell-right{"width" => "20%"} Total Price
             %tbody
               %tr
-                %td
-                  %h4.item-name
-                    Website Hosting
+                %td{"colspan" => "4"}
+                  %h4 Website Hosting
+              %tr
+                %td.item-name-w
+                  %h5.item-name
+                    Basic Plan Hosting
                     %a.remove{:href => "#"} [remove]
                   %ul.item-details
                     %li
@@ -103,8 +107,34 @@
                     %strong $53.40
                     \/mo
               %tr
-                %td
-                  %h4.item-name
+                %td.item-name-w
+                  %h5.item-name
+                    Pro Plan Hosting
+                    %a.remove{:href => "#"} [remove]
+                  %ul.item-details
+                    %li
+                      plan:
+                      %strong basic
+                    %li
+                      domain:
+                      %strong zitana.com
+                %td.cell-center
+                  %select.item-term.input-small{:name => ""}
+                    %option{:value => "5 Years"} 5 Years
+                %td.cell-right
+                  .item-price-unit
+                    %strong $23.15
+                    \/mo
+                %td.cell-right
+                  .item-price-total
+                    %strong $53.40
+                    \/mo
+              %tr
+                %td{"colspan" => "4"}
+                  %h4 Domains
+              %tr
+                %td.item-name-w
+                  %h5.item-name
                     Zitana.com
                     %a.remove{:href => "#"} [remove]
                   %ul.item-details
@@ -123,28 +153,65 @@
                     %strong $53.40
                     \/year
               %tr
-                %td
-                  %h4.item-name
-                    Website Hosting
+                %td.item-name-w
+                  %h5.item-name
+                    Armani.com
                     %a.remove{:href => "#"} [remove]
                   %ul.item-details
                     %li
-                      plan:
-                      %strong pro
-                    %li
-                      domain:
-                      %strong zitana.com
+                      %strong .com
+                      domain registration
                 %td.cell-center
                   %select.item-term.input-small{:name => ""}
                     %option{:value => "5 Years"} 5 Years
                 %td.cell-right
                   .item-price-unit
                     %strong $23.15
-                    \/mo
+                    \/year
                 %td.cell-right
                   .item-price-total
                     %strong $53.40
-                    \/mo
+                    \/year
+              %tr
+                %td.item-name-w
+                  %h5.item-name
+                    Adidas.com
+                    %a.remove{:href => "#"} [remove]
+                  %ul.item-details
+                    %li
+                      %strong .com
+                      domain registration
+                %td.cell-center
+                  %select.item-term.input-small{:name => ""}
+                    %option{:value => "5 Years"} 5 Years
+                %td.cell-right
+                  .item-price-unit
+                    %strong $23.15
+                    \/year
+                %td.cell-right
+                  .item-price-total
+                    %strong $53.40
+                    \/year
+              %tr
+                %td.item-name-w
+                  %h5.item-name
+                    Heroku.com
+                    %a.remove{:href => "#"} [remove]
+                  %ul.item-details
+                    %li
+                      %strong .com
+                      domain registration
+                %td.cell-center
+                  %select.item-term.input-small{:name => ""}
+                    %option{:value => "5 Years"} 5 Years
+                %td.cell-right
+                  .item-price-unit
+                    %strong $23.15
+                    \/year
+                %td.cell-right
+                  .item-price-total
+                    %strong $53.40
+                    \/year
           .row-fluid
             .span6
               .coupon-w

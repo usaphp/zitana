@@ -16,16 +16,17 @@
             %a.brand{:href => "domain.html"}
               %img{:src => "../assets/images/logo.png", :alt => ""}
           .language-switcher.pull-right
-            %ul
-              %li.active
-                %a{:href => "#"}
-                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
-              %li
-                %a{:href => "#"}
-                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
-              %li
-                %a{:href => "#"}
-                  %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+            %a{:href => "#"}
+              %img{:src => "../assets/images/flags/Belgium.png", :alt => ""}
+            .language-switcher-list-w
+              .language-switcher-arrow
+              %ul.language-switcher-list
+                %li
+                  %a{:href => "#"} English - Euro
+                %li
+                  %a{:href => "#"} Dutch - Euro
+                %li
+                  %a{:href => "#"} English - US dollar
           %form.navbar-search.pull-right{:action => "search-results.html"}
             %input{:type => "text", :class => "search-query", :placeholder => "Search"}
           .nav-collapse.collapse.pull-right
@@ -253,7 +254,33 @@
                 %li Free migration to Zitana
                 %li Lost some data? Recover it with free back-ups of your websites, databases and emails
                 %li Personal assistance and management by Zitana
+      .faq-w
+        %h2
+          %i.icon-question-sign
+          Hosting FAQ
+        %ul
+          %li
+            %h3 How do I setup a hosting account?
+            %p Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
 
+          %li
+            %h3 What is a best price for my service?
+            %p Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+
+          %li
+            %h3 When is my account going to be activated?
+            %p Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+
+          %li
+            %h3 Why do I have to pay upfront?
+            %p Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products.
+
+          %li
+            %h3 Where do I find my account number?
+            %p Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.
+        %a.btn.btn-primary{:href => "faq.html"}
+          Read More
+          %i.icon-circle-arrow-right
   .pre-footer
     .container
       .row
